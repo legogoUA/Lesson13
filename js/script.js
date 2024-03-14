@@ -3,11 +3,11 @@ const btn = document.querySelector(".js-get-data");
 // btn.addEventListener("click", getUrl);
 
 // function getUrl() {
-//   // return fetch("https://api.monobank.ua/bank/currency");
+  // return fetch("https://api.monobank.ua/bank/currency");
 //   return fetch("https://the-cocktail-db.p.rapidapi.com/search.php'");
-//   //   fetch(
-//   //     "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits"
-//   //   );
+//     fetch(
+//       "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits"
+//     );
 // }
 
 // let promise = fetch(url, {
@@ -96,41 +96,41 @@ const btn = document.querySelector(".js-get-data");
 
 // try {
 //   console.log("Start");
-//   a;
+//   addEventListener();
 //   console.log("Finish");
 // } catch (err) {
 //   console.log("Errr");
 // }
 
 // try {
-//   setTimeout(function () {
-//     da;
-//   }, 1000);
+  // setTimeout(function () {
+    // da;
+  // }, 1000);
 // } catch (err) {
-//   console.log("Errr");
+  // console.log("Errr");
 // }
 
 // setTimeout(function () {
-//   try {
-//     da;
-//   } catch (err) {
-//     console.log("Errr");
-//   }
+  // try {
+    // da;
+  // } catch (err) {
+    // console.log("Errr");
+  // }
 // }, 1000);
 
 // try {
-//   da;
+  // da;
 // } catch (err) {
-//   console.log(err.stack);
+  // console.log(err.stack); //name, message
 // }
 
 // let json = `{"name": "Ann"}`;
 
 // try {
 //   let user = JSON.parse(json);
-//   // if (!user.city) {
-//   //   throw new SyntaxError("Нема міста");
-//   // }
+//   if (!user.city) {
+//     throw new SyntaxError("Нема міста");
+//   }
 //   console.log("start");
 // } catch (err) {
 //   console.log("Err", err.message);
@@ -138,28 +138,28 @@ const btn = document.querySelector(".js-get-data");
 //   console.log("finally");
 // }
 
-// let socket = new WebSocket(
-//   "wss://javascript.info/article/websocket/demo/hello"
-// );
+let socket = new WebSocket(
+  "wss://javascript.info/article/websocket/demo/hello"
+);
 
-// socket.onopen = function (e) {
-//   console.log("З*єднання встановленно");
-//   socket.send("Привіт");
-//   socket.send("Я Христя");
-// };
+socket.onopen = function (e) {
+  console.log("З*єднання встановленно");
+  socket.send("Привіт");
+  socket.send("Я Христя");
+};
 
-// socket.onmessage = function (e) {
-//   console.log("message", e.data);
-// };
+socket.onmessage = function (e) {
+  console.log("message", e.data);
+};
 
-// socket.onclose = function (event) {
-//   if (event.wasClean) {
-//     console.log("Зупинено", event.code);
-//   } else {
-//     console.log("Poзірвано");
-//   }
-// };
+socket.onclose = function (event) {
+  if (event.wasClean) {
+    console.log("Зупинено", event.code);
+  } else {
+    console.log("Poзірвано");
+  }
+};
 
-// socket.onerror = function (err) {
-//   console.log(err);
-// };
+socket.onerror = function (err) {
+  console.log(err);
+};
